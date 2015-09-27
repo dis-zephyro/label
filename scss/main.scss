@@ -1,0 +1,249 @@
+@font-face {
+    font-family:'MyHelvetica';
+    src: local("Helvetica Neue"),
+        local("HelveticaNeue");
+    src: url('../fonts/HelveticaNeueCyr-Thin/HelveticaNeueCyr-Thin.eot');
+    src: url('../fonts/HelveticaNeueCyr-Thin/HelveticaNeueCyr-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueCyr-Thin/HelveticaNeueCyr-Thin.woff') format('woff'),
+        url('../fonts/HelveticaNeueCyr-Thin/HelveticaNeueCyr-Thin.ttf') format('truetype'),
+        url('../fonts/HelveticaNeueCyr-Thin/HelveticaNeueCyr-Thin.svg#HelveticaNeueCyr-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2265;
+}
+
+@font-face {
+    font-family:'MyHelvetica';
+    src: local("Helvetica Neue"),
+         local("HelveticaNeue");
+    src: url('../fonts/HelveticaNeueCyr-Light/HelveticaNeueCyr-Light_gdi.eot');
+    src: url('../fonts/HelveticaNeueCyr-Light/HelveticaNeueCyr-Light_gdi.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueCyr-Light/HelveticaNeueCyr-Light_gdi.woff') format('woff'),
+        url('../fonts/HelveticaNeueCyr-Light/HelveticaNeueCyr-Light_gdi.ttf') format('truetype'),
+        url('../fonts/HelveticaNeueCyr-Light/HelveticaNeueCyr-Light_gdi.svg#HelveticaNeueCyr-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2265;
+}
+
+@font-face {
+    font-family:'MyHelvetica';
+    src: url('../fonts/HelveticaNeueCyr-Roman/HelveticaNeueCyr-Roman.eot');
+    src: url('../fonts/HelveticaNeueCyr-Roman/HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/HelveticaNeueCyr-Roman/HelveticaNeueCyr-Roman.woff') format('woff'),
+    url('../fonts/HelveticaNeueCyr-Roman/HelveticaNeueCyr-Roman.ttf') format('truetype'),
+    url('../fonts/HelveticaNeueCyr-Roman/HelveticaNeueCyr-Roman.svg#HelveticaNeueCyr-Roman') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2265;
+}
+
+@font-face {
+    font-family:'MyHelvetica';
+    src: local("Helvetica Neue"),
+         local("HelveticaNeue");
+    src: url('../fonts/HelveticaNeueCyr-Medium/HelveticaNeueCyr-Medium_gdi.eot');
+    src: url('../fonts/HelveticaNeueCyr-Medium/HelveticaNeueCyr-Medium_gdi.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueCyr-Medium/HelveticaNeueCyr-Medium_gdi.woff') format('woff'),
+        url('../fonts/HelveticaNeueCyr-Medium/HelveticaNeueCyr-Medium_gdi.ttf') format('truetype'),
+        url('../fonts/HelveticaNeueCyr-Medium/HelveticaNeueCyr-Medium_gdi.svg#HelveticaNeueCyr-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2265;
+}
+
+@font-face {
+    font-family:'MyHelvetica';
+    src: local("Helvetica Neue"),
+         local("HelveticaNeue");
+    src: url('../fonts/HelveticaNeueCyr-Bold/HelveticaNeueCyr-Bold_gdi.eot');
+    src: url('../fonts/HelveticaNeueCyr-Bold/HelveticaNeueCyr-Bold_gdi.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueCyr-Bold/HelveticaNeueCyr-Bold_gdi.woff') format('woff'),
+        url('../fonts/HelveticaNeueCyr-Bold/HelveticaNeueCyr-Bold_gdi.ttf') format('truetype'),
+        url('../fonts/HelveticaNeueCyr-Bold/HelveticaNeueCyr-Bold_gdi.svg#HelveticaNeueCyr-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2265;
+}
+
+
+// Variables
+@import "variables";
+
+
+// Mixins
+@import "mixins/grid-framework";
+@import "mixins/grid";
+@import "mixins/clearfix";
+@import "mixins/responsive-visibility";
+
+@import "mixins/gradients";
+@import "mixins/image";
+@import "mixins/opacity";
+@import "mixins/tab-focus";
+@import "mixins/vendor-prefixes";
+@import "mixins/center-block";
+
+@import "mixins/form";
+@import "mixins/buttons";
+
+
+// Reset and dependencies
+@import "components/normalize";
+@import "components/print";
+
+// Core CSS
+// @import "components/grid";
+@import "components/forms";
+@import "components/buttons";
+
+// Components
+// @import "components/responsive-embed";
+// @import "components/responsive-utilities";
+
+// Utilities
+@import "components/utilities";
+
+
+// Content
+
+@import "header";
+@import "block01";
+@import "block02";
+@import "block03";
+@import "block04";
+@import "block05";
+@import "block06";
+@import "block07";
+@import "block08";
+@import "block09";
+@import "footer";
+
+
+
+/* Base styles
+   ========================= */
+
+* {
+    @include box-sizing(border-box);
+}
+*:before,
+*:after {
+    @include box-sizing(border-box);
+}
+
+
+// Body reset
+
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    color: $text-color;
+    font-weight: 300;
+    background-color: $body-bg;
+}
+
+
+
+
+// Reset fonts for relevant elements
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+
+.container {
+    width: 1200px;
+    padding: 0 50px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    @include clearfix;
+}
+
+h2 {
+    color: #06162d;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 50px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 35px;
+    text-transform: uppercase;
+
+    &:before {
+        left: 50%;
+        bottom: 0;
+        width: 90px;
+        height: 7px;
+        content: " ";
+        margin-left: -45px;
+        position: absolute;
+        background: url("../img/sprite.png") -30px 0;
+    }
+}
+
+
+.sub-title {
+    color: #444;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+p {
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+.text-red {
+    color: #fc3339;
+}
+
+
+// Links
+
+a {
+    color: $link-color;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: $link-hover-color;
+        text-decoration: $link-hover-decoration;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+[role="button"] {
+    cursor: pointer;
+}
+
+

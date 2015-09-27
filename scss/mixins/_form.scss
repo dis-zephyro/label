@@ -1,0 +1,41 @@
+@mixin form-control($padding: $input-padding, $font-size: $input-font-size, $line-height: $input-line-height, $color: $input-color, $bg: $input-bg, $border: $input-border, $border-focus: $input-border-focus) {
+    width: 100%;
+    display: block;
+    padding: $padding;
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $color;
+    text-align: left;
+    text-decoration: none;
+    background-color: $bg;
+    background-image: url("../img/form_sprite.png");
+    background-position: 0 -450px;
+    border: 1px solid $border;
+
+
+    &:focus,
+    &:hover {
+        outline: 0;
+        border-color: $input-border-focus;
+    }
+}
+
+@mixin input-size($parent, $input-height, $padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius) {
+    #{$parent} {
+        height: $input-height;
+        padding: $padding-vertical $padding-horizontal;
+        font-size: $font-size;
+        line-height: $line-height;
+        border-radius: $border-radius;
+    }
+
+    select#{$parent} {
+        height: $input-height;
+        line-height: $input-height;
+    }
+
+    textarea#{$parent},
+    select[multiple]#{$parent} {
+        height: auto;
+    }
+}

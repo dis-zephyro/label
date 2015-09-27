@@ -1,0 +1,199 @@
+.b06 {
+	padding: 70px 0;
+	background: #fff;
+
+	.form-price {
+		width: 100%;
+
+		select {
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			text-indent: 0.01px;
+			text-overflow: '';
+			-ms-appearance: none;
+			appearance: none!important;
+
+			&.form-control {
+				text-align: left;
+			}
+
+			&::-ms-expand {
+				display: none;
+			}
+
+			option {
+				background: #fff;
+				border-color: #a9a9a9;
+			}
+		}
+
+		.form-price-group {
+			position: relative;
+			background: #fafafa;
+			margin-bottom: 70px;
+			padding: 65px 50px 35px 70px;
+
+			&:before {
+				left: 50%;
+				bottom: -42px;
+				width: 39px;
+				height: 21px;
+				content: " ";
+				margin-left: -20px;
+				position: absolute;
+				background: url("../img/sprite.png") -120px 0 no-repeat;
+			}
+		}
+
+		.form-price__title {
+			color: #888888;
+			font-size: 22px;
+			line-height: 22px;
+			margin-bottom: 30px;
+		}
+
+		.form-price__left {
+			float: left;
+			width: 320px;
+			padding-right: 50px;
+			border-right: 1px solid #eeeeee;
+
+			.form-group {
+				text-align: center;
+				margin-bottom: 30px;
+			}
+
+			select {
+				&.form-control {
+					height: 50px;
+					background-position: 0 -330px;
+				}
+			}
+		}
+
+		.form-price__right {
+			width: 660px;
+			float: right;
+			padding: 0 20px 0 40px;
+
+			.col50 {
+				width: 50%;
+				float: left;
+				padding-right: 30px;
+			}
+
+			.form-group {
+				margin-bottom: 10px;
+			}
+
+			select {
+				&.form-control {
+					height: 40px;
+					font-size: 14px;
+					padding-top: 9px;
+					padding-bottom: 9px;
+					background-position: 0 -380px;
+				}
+			}
+
+
+			.checkbox {
+
+				input[type=checkbox] {
+					display: none;
+				}
+
+				label {
+					width: 100%;
+					display: block;
+					color: #aaaaaa;
+					font-size: 14px;
+					font-weight: 300;
+					line-height: 20px;
+					text-align: left;
+					position: relative;
+					text-decoration: none;
+					background-color: #fff;
+					padding: 9px 55px 9px 20px;
+					border: 1px solid $input-border;
+
+					&:before {
+						right: 6px;
+						top: 5px;
+						content: "";
+						width: 22px;
+						height: 24px;
+						position: absolute;
+						display: inline-block;
+						background: url("../img/form_sprite.png") -22px -420px no-repeat;
+					}
+
+					&:hover {
+						border-color: $input-border-focus;
+					}
+				}
+
+
+				input[type=checkbox]:checked + label:before {
+					background-position: 0 -420px;
+				}
+
+
+			}
+		}
+
+		.form-user-group {
+			width: 100%;
+			font-size: 0;
+			line-height: 0;
+			text-align: center;
+			margin-bottom: 40px;
+
+			li {
+				width: 270px;
+				margin: 0 20px;
+				display: inline-block;
+
+				.form-control {
+					padding: 16px 40px 16px 70px;
+					background-position: 0 -55px;
+				}
+
+				&:first-child {
+
+					.form-control {
+						background-position: 0 0;
+					}
+				}
+
+				&:last-child {
+
+					.form-control {
+						background-position: 0 -110px;
+					}
+				}
+			}
+		}
+
+		.form-price__footer {
+			width: 820px;
+
+			.text {
+				font-size: 16px;
+				padding: 11px 0;
+				line-height: 30px;
+
+				span {
+					width: 120px;
+					height: 30px;
+					margin: 0 10px;
+					color: #fc3339;
+					text-align: center;
+					display: inline-block;
+					text-transform: uppercase;
+					background: url("../img/b06_text.png") 0 0 no-repeat;
+				}
+			}
+		}
+	}
+}

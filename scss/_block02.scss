@@ -1,0 +1,30 @@
+.b02 {
+	height: 710px;
+	padding-top: 70px;
+	background: url("../img/b02_bg.jpg") top center no-repeat;
+
+	.b02__reasons {
+
+		li {
+			float: left;
+			width: 33.33%;
+			font-weight: 300;
+			line-height: 24px;
+			text-align: center;
+			position: relative;
+			padding: 180px 30px 0 30px;
+
+			&.item1 {
+				background: url("../img/b02_icon1.png") top center no-repeat;
+			}
+
+			&.item2 {
+				background: url("../img/b02_icon2.png") top center no-repeat;
+			}
+
+			&.item3 {
+				background: url("../img/b02_icon3.png") top center no-repeat;
+			}
+		}
+	}
+}

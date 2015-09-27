@@ -1,0 +1,66 @@
+.header {
+	height: 100px;
+	background: #06162d;
+
+	.header__logo {
+		top: 27px;
+		left: 50px;
+		width: 134px;
+		height: 45px;
+		position: absolute;
+		background: url("../img/logo.png") 0 0  no-repeat;
+	}
+
+	.header__contact {
+		top: 25px;
+		right: 50px;
+		color: #fff;
+		position: absolute;
+
+		.phone {
+			font-size: 28px;
+			line-height: 30px;
+			font-weight: 100;
+
+			span {
+				padding-left: 40px;
+				position: relative;
+				display: inline-block;
+
+				&:before {
+					left: 0;
+					top: 50%;
+					width: 23px;
+					height: 23px;
+					content: " ";
+					margin-top: -12px;
+					position: absolute;
+					background: url("../img/sprite.png") 0 0 no-repeat;
+				}
+			}
+		}
+
+		.btn-callback {
+			color: #fff;
+			font-size: 12px;
+			line-height: 13px;
+			position: relative;
+			padding-right: 15px;
+			text-transform: uppercase;
+
+			&:before {
+				right: 0;
+				top: 0;
+				width: 7px;
+				height: 13px;
+				content: " ";
+				position: absolute;
+				background: url("../img/sprite.png") -23px 0 no-repeat;
+			}
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}

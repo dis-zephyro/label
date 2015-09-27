@@ -1,0 +1,92 @@
+.b03 {
+	color: #fff;
+	height: 717px;
+	padding-top: 90px;
+	background: url("../img/b03_bg.jpg") top center no-repeat;
+
+	h2 {
+		color: #fff;
+
+		&:before {
+			background-position: -30px -13px;
+		}
+	}
+
+	.sub-title {
+		color: #fff;
+	}
+
+	.b03__expectations {
+
+		ul {
+			width: 380px;
+
+			li {
+				height: 70px;
+				overflow: hidden;
+				font-size: 14px;
+				line-height: 21px;
+				text-align: center;
+				position: relative;
+				margin-bottom: 30px;
+
+				&:before {
+					top: 0;
+					width: 70px;
+					height: 70px;
+					content: " ";
+					position: absolute;
+					background: url("../img/sprite.png") no-repeat;
+				}
+
+				&.item1:before {
+					background-position: 0 -23px;
+				}
+
+				&.item2:before {
+					background-position: -70px -23px;
+				}
+
+				&.item3:before {
+					background-position: -140px -23px;
+				}
+
+				&.item4:before {
+					background-position: 0 -93px;
+				}
+
+				&.item5:before {
+					background-position: -70px -93px;
+				}
+
+				&.item6:before {
+					background-position: -140px -93px;
+				}
+			}
+
+			&.pull-left {
+
+				li {
+					padding-right: 30px;
+					border-left: 1px solid #626d7e;
+
+					&:before {
+						right: 17px;
+					}
+				}
+			}
+
+			&.pull-right {
+
+				li {
+					padding-left: 30px;
+					border-right: 1px solid #626d7e;
+
+					&:before {
+						left: 17px;
+					}
+				}
+			}
+		}
+	}
+}
