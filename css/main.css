@@ -1035,80 +1035,157 @@ input[type="checkbox"]:focus {
     .b06 .form-price .form-price__left {
       float: left;
       width: 320px;
+      height: 280px;
       padding-right: 50px;
       border-right: 1px solid #eeeeee; }
-      .b06 .form-price .form-price__left .form-group {
-        text-align: center;
-        margin-bottom: 30px; }
-      .b06 .form-price .form-price__left select.form-control {
-        height: 50px;
-        background-position: -5px -330px; }
     .b06 .form-price .form-price__right {
       width: 660px;
       float: right;
       padding: 0 20px 0 40px; }
-      .b06 .form-price .form-price__right .col50 {
-        width: 50%;
-        float: left;
-        padding-right: 30px; }
-      .b06 .form-price .form-price__right .form-group {
-        margin-bottom: 10px; }
-      .b06 .form-price .form-price__right select.form-control {
-        height: 40px;
-        font-size: 14px;
-        padding-top: 9px;
-        padding-bottom: 9px;
-        background-position: 0 -380px; }
-      .b06 .form-price .form-price__right .checkbox input[type=checkbox] {
-        display: none; }
-      .b06 .form-price .form-price__right .checkbox label {
-        width: 100%;
-        display: block;
-        color: #aaaaaa;
-        font-size: 14px;
-        font-weight: 300;
-        line-height: 20px;
-        text-align: left;
-        position: relative;
-        text-decoration: none;
-        background-color: #fff;
-        padding: 9px 55px 9px 20px;
-        border: 1px solid #dddddd; }
-        .b06 .form-price .form-price__right .checkbox label:before {
-          right: 6px;
-          top: 5px;
-          content: "";
-          width: 22px;
-          height: 24px;
-          position: absolute;
-          display: inline-block;
-          background: url("../img/form_sprite.png") -22px -420px no-repeat; }
-        .b06 .form-price .form-price__right .checkbox label:hover {
-          border-color: #a9a9a9; }
-      .b06 .form-price .form-price__right .checkbox input[type=checkbox]:checked + label:before {
-        background-position: 0 -420px; }
-    .b06 .form-price .form-user-group {
+    .b06 .form-price .form-base {
       width: 100%;
       font-size: 0;
       line-height: 0;
       text-align: center;
       margin-bottom: 40px; }
-      .b06 .form-price .form-user-group ol {
+      .b06 .form-price .form-base ol {
         margin: 0;
         padding: 0;
-        list-style: none; }
-      .b06 .form-price .form-user-group li {
+        list-style: none;
+        position: relative; }
+      .b06 .form-price .form-base li {
         width: 270px;
-        margin: 0 20px;
         display: inline-block; }
-        .b06 .form-price .form-user-group li .form-control {
-          padding: 16px 40px 16px 70px; }
-        .b06 .form-price .form-user-group li:nth-child(1) .form-control {
-          background-position: 0 0; }
-        .b06 .form-price .form-user-group li:nth-child(2) .form-control {
-          background-position: 0 -55px; }
-        .b06 .form-price .form-user-group li:nth-child(3) .form-control {
-          background-position: 0 -110px; }
+        .b06 .form-price .form-base li select,
+        .b06 .form-price .form-base li input[type="text"] {
+          width: 100%;
+          display: block;
+          padding: 14px 20px;
+          font-size: 16px;
+          line-height: 20px;
+          color: #aaaaaa;
+          text-align: left;
+          text-decoration: none;
+          background-color: #fff;
+          background-image: url("../img/form_sprite.png");
+          background-position: 0 -450px;
+          border: 1px solid #dddddd; }
+          .b06 .form-price .form-base li select::-moz-placeholder,
+          .b06 .form-price .form-base li input[type="text"]::-moz-placeholder {
+            color: #aaaaaa;
+            opacity: 1; }
+          .b06 .form-price .form-base li select:-ms-input-placeholder,
+          .b06 .form-price .form-base li input[type="text"]:-ms-input-placeholder {
+            color: #aaaaaa; }
+          .b06 .form-price .form-base li select::-webkit-input-placeholder,
+          .b06 .form-price .form-base li input[type="text"]::-webkit-input-placeholder {
+            color: #aaaaaa; }
+          .b06 .form-price .form-base li select:focus, .b06 .form-price .form-base li select:hover,
+          .b06 .form-price .form-base li input[type="text"]:focus,
+          .b06 .form-price .form-base li input[type="text"]:hover {
+            outline: 0;
+            border-color: #a9a9a9; }
+        .b06 .form-price .form-base li#item1 {
+          margin: 0 20px; }
+          .b06 .form-price .form-base li#item1 input[type="text"] {
+            background-position: 0 0;
+            padding: 16px 40px 16px 70px; }
+        .b06 .form-price .form-base li#item2 {
+          margin: 0 20px; }
+          .b06 .form-price .form-base li#item2 input[type="text"] {
+            background-position: 0 -55px;
+            padding: 16px 40px 16px 70px; }
+        .b06 .form-price .form-base li#item3 {
+          margin: 0 20px; }
+          .b06 .form-price .form-base li#item3 input[type="text"] {
+            background-position: 0 -110px;
+            padding: 16px 40px 16px 70px; }
+        .b06 .form-price .form-base li#item4, .b06 .form-price .form-base li#item5, .b06 .form-price .form-base li#item6, .b06 .form-price .form-base li#item7 {
+          left: 70px;
+          display: block;
+          position: absolute;
+          text-align: center;
+          margin-bottom: 20px; }
+          .b06 .form-price .form-base li#item4 select,
+          .b06 .form-price .form-base li#item4 input[type="text"], .b06 .form-price .form-base li#item5 select,
+          .b06 .form-price .form-base li#item5 input[type="text"], .b06 .form-price .form-base li#item6 select,
+          .b06 .form-price .form-base li#item6 input[type="text"], .b06 .form-price .form-base li#item7 select,
+          .b06 .form-price .form-base li#item7 input[type="text"] {
+            height: 50px; }
+        .b06 .form-price .form-base li#item4 {
+          top: -390px; }
+          .b06 .form-price .form-base li#item4 select {
+            background-position: -5px -330px; }
+        .b06 .form-price .form-base li#item5 {
+          top: -320px; }
+          .b06 .form-price .form-base li#item5 select {
+            background-position: -5px -330px; }
+        .b06 .form-price .form-base li#item6 {
+          top: -250px; }
+        .b06 .form-price .form-base li#item7 {
+          top: -180px; }
+        .b06 .form-price .form-base li#item8, .b06 .form-price .form-base li#item9, .b06 .form-price .form-base li#item10, .b06 .form-price .form-base li#item11 {
+          left: 430px;
+          display: block;
+          position: absolute;
+          text-align: center;
+          margin-bottom: 10px; }
+          .b06 .form-price .form-base li#item8 select, .b06 .form-price .form-base li#item9 select, .b06 .form-price .form-base li#item10 select, .b06 .form-price .form-base li#item11 select {
+            height: 40px;
+            font-size: 14px;
+            padding-top: 9px;
+            padding-bottom: 9px;
+            background-position: 0 -380px; }
+        .b06 .form-price .form-base li#item8 {
+          top: -350px; }
+        .b06 .form-price .form-base li#item9 {
+          top: -290px; }
+        .b06 .form-price .form-base li#item10 {
+          top: -230px; }
+        .b06 .form-price .form-base li#item11 {
+          top: -170px; }
+        .b06 .form-price .form-base li#item12, .b06 .form-price .form-base li#item13, .b06 .form-price .form-base li#item14, .b06 .form-price .form-base li#item15 {
+          right: 90px;
+          display: block;
+          position: absolute;
+          text-align: center;
+          margin-bottom: 10px; }
+          .b06 .form-price .form-base li#item12 input[type=checkbox], .b06 .form-price .form-base li#item13 input[type=checkbox], .b06 .form-price .form-base li#item14 input[type=checkbox], .b06 .form-price .form-base li#item15 input[type=checkbox] {
+            display: none; }
+          .b06 .form-price .form-base li#item12 label, .b06 .form-price .form-base li#item13 label, .b06 .form-price .form-base li#item14 label, .b06 .form-price .form-base li#item15 label {
+            width: 100%;
+            display: block;
+            color: #aaaaaa;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 20px;
+            text-align: left;
+            position: relative;
+            text-decoration: none;
+            background-color: #fff;
+            padding: 9px 55px 9px 20px;
+            border: 1px solid #dddddd; }
+            .b06 .form-price .form-base li#item12 label:before, .b06 .form-price .form-base li#item13 label:before, .b06 .form-price .form-base li#item14 label:before, .b06 .form-price .form-base li#item15 label:before {
+              right: 6px;
+              top: 5px;
+              content: "";
+              width: 22px;
+              height: 24px;
+              position: absolute;
+              display: inline-block;
+              background: url("../img/form_sprite.png") -22px -420px no-repeat; }
+            .b06 .form-price .form-base li#item12 label:hover, .b06 .form-price .form-base li#item13 label:hover, .b06 .form-price .form-base li#item14 label:hover, .b06 .form-price .form-base li#item15 label:hover {
+              border-color: #a9a9a9; }
+          .b06 .form-price .form-base li#item12 input[type=checkbox]:checked + label:before, .b06 .form-price .form-base li#item13 input[type=checkbox]:checked + label:before, .b06 .form-price .form-base li#item14 input[type=checkbox]:checked + label:before, .b06 .form-price .form-base li#item15 input[type=checkbox]:checked + label:before {
+            background-position: 0 -420px; }
+          .b06 .form-price .form-base li#item12#item12, .b06 .form-price .form-base li#item13#item12, .b06 .form-price .form-base li#item14#item12, .b06 .form-price .form-base li#item15#item12 {
+            top: -350px; }
+          .b06 .form-price .form-base li#item12#item13, .b06 .form-price .form-base li#item13#item13, .b06 .form-price .form-base li#item14#item13, .b06 .form-price .form-base li#item15#item13 {
+            top: -290px; }
+          .b06 .form-price .form-base li#item12#item14, .b06 .form-price .form-base li#item13#item14, .b06 .form-price .form-base li#item14#item14, .b06 .form-price .form-base li#item15#item14 {
+            top: -230px; }
+          .b06 .form-price .form-base li#item12#item15, .b06 .form-price .form-base li#item13#item15, .b06 .form-price .form-base li#item14#item15, .b06 .form-price .form-base li#item15#item15 {
+            top: -170px; }
     .b06 .form-price .form-price__footer {
       width: 820px; }
       .b06 .form-price .form-price__footer .text {

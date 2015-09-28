@@ -55,94 +55,18 @@
 		.form-price__left {
 			float: left;
 			width: 320px;
+			height: 280px;
 			padding-right: 50px;
 			border-right: 1px solid #eeeeee;
-
-			.form-group {
-				text-align: center;
-				margin-bottom: 30px;
-			}
-
-			select {
-				&.form-control {
-					height: 50px;
-					background-position: -5px -330px;
-				}
-			}
 		}
 
 		.form-price__right {
 			width: 660px;
 			float: right;
 			padding: 0 20px 0 40px;
-
-			.col50 {
-				width: 50%;
-				float: left;
-				padding-right: 30px;
-			}
-
-			.form-group {
-				margin-bottom: 10px;
-			}
-
-			select {
-				&.form-control {
-					height: 40px;
-					font-size: 14px;
-					padding-top: 9px;
-					padding-bottom: 9px;
-					background-position: 0 -380px;
-				}
-			}
-
-
-			.checkbox {
-
-				input[type=checkbox] {
-					display: none;
-				}
-
-				label {
-					width: 100%;
-					display: block;
-					color: #aaaaaa;
-					font-size: 14px;
-					font-weight: 300;
-					line-height: 20px;
-					text-align: left;
-					position: relative;
-					text-decoration: none;
-					background-color: #fff;
-					padding: 9px 55px 9px 20px;
-					border: 1px solid $input-border;
-
-					&:before {
-						right: 6px;
-						top: 5px;
-						content: "";
-						width: 22px;
-						height: 24px;
-						position: absolute;
-						display: inline-block;
-						background: url("../img/form_sprite.png") -22px -420px no-repeat;
-					}
-
-					&:hover {
-						border-color: $input-border-focus;
-					}
-				}
-
-
-				input[type=checkbox]:checked + label:before {
-					background-position: 0 -420px;
-				}
-
-
-			}
 		}
 
-		.form-user-group {
+		.form-base {
 			width: 100%;
 			font-size: 0;
 			line-height: 0;
@@ -153,35 +77,203 @@
 				margin: 0;
 				padding: 0;
 				list-style: none;
+				position: relative;
 			}
 
 			li {
 				width: 270px;
-				margin: 0 20px;
 				display: inline-block;
 
-				.form-control {
-					padding: 16px 40px 16px 70px;
+				select,
+				input[type="text"] {
+					width: 100%;
+					display: block;
+					padding: 14px 20px;
+					font-size: 16px;
+					line-height: 20px;
+					color: #aaaaaa;
+					text-align: left;
+					text-decoration: none;
+					background-color: #fff;
+					background-image: url("../img/form_sprite.png");
+					background-position: 0 -450px;
+					border: 1px solid #dddddd;
+
+					@include placeholder(#aaaaaa);
+
+					&:focus,
+					&:hover {
+						outline: 0;
+						border-color: #a9a9a9;
+					}
 				}
 
-				&:nth-child(1) {
+				&#item1 {
+					margin: 0 20px;
 
-					.form-control {
+					input[type="text"] {
 						background-position: 0 0;
+						padding: 16px 40px 16px 70px;
 					}
 				}
 
-				&:nth-child(2) {
+				&#item2 {
+					margin: 0 20px;
 
-					.form-control {
+					input[type="text"] {
 						background-position: 0 -55px;
+						padding: 16px 40px 16px 70px;
 					}
 				}
 
-				&:nth-child(3) {
+				&#item3 {
+					margin: 0 20px;
 
-					.form-control {
+					input[type="text"] {
 						background-position: 0 -110px;
+						padding: 16px 40px 16px 70px;
+					}
+				}
+
+				&#item4,
+				&#item5,
+				&#item6,
+				&#item7 {
+					left: 70px;
+					display: block;
+					position: absolute;
+					text-align: center;
+					margin-bottom: 20px;
+
+					select,
+					input[type="text"] {
+						height: 50px;
+					}
+				}
+
+				&#item4 {
+					top: -390px;
+
+
+					select {
+						background-position: -5px -330px;
+					}
+				}
+
+				&#item5 {
+					top: -320px;
+
+					select {
+						background-position: -5px -330px;
+					}
+				}
+
+				&#item6 {
+					top: -250px;
+				}
+
+				&#item7 {
+					top: -180px;
+				}
+
+				&#item8,
+				&#item9,
+				&#item10,
+				&#item11 {
+					left: 430px;
+					display: block;
+					position: absolute;
+					text-align: center;
+					margin-bottom: 10px;
+
+					select {
+						height: 40px;
+						font-size: 14px;
+						padding-top: 9px;
+						padding-bottom: 9px;
+						background-position: 0 -380px;
+					}
+				}
+
+				&#item8 {
+					top: -350px;
+				}
+
+				&#item9 {
+					top: -290px;
+				}
+
+				&#item10 {
+					top: -230px;
+				}
+
+				&#item11 {
+					top: -170px;
+				}
+
+				&#item12,
+				&#item13,
+				&#item14,
+				&#item15 {
+					right: 90px;
+					display: block;
+					position: absolute;
+					text-align: center;
+					margin-bottom: 10px;
+
+					input[type=checkbox] {
+						display: none;
+					}
+
+					label {
+						width: 100%;
+						display: block;
+						color: #aaaaaa;
+						font-size: 14px;
+						font-weight: 300;
+						line-height: 20px;
+						text-align: left;
+						position: relative;
+						text-decoration: none;
+						background-color: #fff;
+						padding: 9px 55px 9px 20px;
+						border: 1px solid $input-border;
+
+						&:before {
+							right: 6px;
+							top: 5px;
+							content: "";
+							width: 22px;
+							height: 24px;
+							position: absolute;
+							display: inline-block;
+							background: url("../img/form_sprite.png") -22px -420px no-repeat;
+						}
+
+						&:hover {
+							border-color: $input-border-focus;
+						}
+					}
+
+
+					input[type=checkbox]:checked + label:before {
+						background-position: 0 -420px;
+					}
+
+					&#item12 {
+						top: -350px;
+					}
+
+					&#item13 {
+						top: -290px;
+					}
+
+					&#item14 {
+						top: -230px;
+					}
+
+					&#item15 {
+						top: -170px;
 					}
 				}
 			}

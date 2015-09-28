@@ -360,123 +360,93 @@
                 <div class="form-price">
                     <div class="form-price-group clearfix">
                         <div class="form-price__left">
-                            <div class="form-group">
-                                <select class="form-control">
-                                    <option>Выберите материал</option>
-                                    <option>Материал 1</option>
-                                    <option>Материал 3</option>
-                                    <option>Материал 4</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <select class="form-control">
-                                    <option>Выберите цветность</option>
-                                    <option>Цвет 1</option>
-                                    <option>Цвет 2</option>
-                                    <option>Цвет 3</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="size" placeholder="Размер этикетки (мм Х мм)">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="circulation" placeholder="Укажите тираж (шт)">
-                            </div>
                         </div>
                         <div class="form-price__right">
                             <div class="form-price__title">Выберите небходимый эффект на этикетке</div>
-                            <div class="clearfix">
-                                <div class="col50">
-                                    <div class="form-group">
-                                        <select class="form-control">
-                                            <option>Эффект 1</option>
-                                            <option>Эффект 2</option>
-                                            <option>Эффект 3</option>
-                                            <option>Эффект 4</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <select class="form-control">
-                                            <option>Эффект 2</option>
-                                            <option>Эффект 1</option>
-                                            <option>Эффект 2</option>
-                                            <option>Эффект 3</option>
-                                            <option>Эффект 4</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <select class="form-control">
-                                            <option>Эффект 1</option>
-                                            <option>Эффект 2</option>
-                                            <option>Эффект 3</option>
-                                            <option>Эффект 4</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <select class="form-control">
-                                            <option>Эффект 2</option>
-                                            <option>Эффект 1</option>
-                                            <option>Эффект 2</option>
-                                            <option>Эффект 3</option>
-                                            <option>Эффект 4</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <select class="form-control">
-                                            <option>Эффект 1</option>
-                                            <option>Эффект 2</option>
-                                            <option>Эффект 3</option>
-                                            <option>Эффект 4</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="col50">
-                                    <div class="form-group">
-                                        <div class="checkbox">
-                                            <input id="check1" type="checkbox" name="check" value="check1">
-                                            <label for="check1">Checkbox</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="checkbox">
-                                            <input id="check2" type="checkbox" name="check" value="check1">
-                                            <label for="check2">Checkbox</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="checkbox">
-                                            <input id="check3" type="checkbox" name="check" value="check1">
-                                            <label for="check3">Checkbox</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="checkbox">
-                                            <input id="check4" type="checkbox" name="check" value="check1">
-                                            <label for="check4">Checkbox</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="checkbox">
-                                            <input id="check5" type="checkbox" name="check" value="check1">
-                                            <label for="check5">Checkbox</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
-                    <div class="form-user-group clearfix">
+                    <div class="form-base clearfix">
                         <form enctype="multipart/form-data" method="post" class="cform mini form">
                             <ol class="cf-ol">
-                                <li>
-                                    <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                                <li id="item1">
+                                    <input type="text" name="name" value="Ваше имя" onfocus="clearField(this)" onblur="setField(this)"/>
                                 </li>
-                                <li>
-                                    <input type="tel" name="name" class="form-control" placeholder="Ваш телефон">
+                                <li id="item2">
+                                    <input type="text" name="name" value="Ваш телефон" onfocus="clearField(this)" onblur="setField(this)">
                                 </li>
-                                <li>
-                                    <input type="email" name="name" class="form-control" placeholder="Ваш e-mail">
+                                <li id="item3">
+                                    <input type="text" name="name" value="Ваш e-mail" onfocus="clearField(this)" onblur="setField(this)">
+                                </li>
+                                <li id="item4">
+                                    <select>
+                                        <option>Выберите материал</option>
+                                        <option>Материал 1</option>
+                                        <option>Материал 3</option>
+                                        <option>Материал 4</option>
+                                    </select>
+                                </li>
+                                <li id="item5">
+                                    <select>
+                                        <option>Выберите цветность</option>
+                                        <option>Цвет 1</option>
+                                        <option>Цвет 2</option>
+                                        <option>Цвет 3</option>
+                                    </select>
+                                </li>
+                                <li id="item6">
+                                    <input type="text" name="name" value="Размер этикетки (мм Х мм)" onfocus="clearField(this)" onblur="setField(this)"/>
+                                </li>
+                                <li id="item7">
+                                    <input type="text" name="name" value="Укажите тираж (шт)" onfocus="clearField(this)" onblur="setField(this)"/>
+                                </li>
+                                <li id="item8">
+                                    <select>
+                                        <option>Эффект 1</option>
+                                        <option>Эффект 2</option>
+                                        <option>Эффект 3</option>
+                                        <option>Эффект 4</option>
+                                    </select>
+                                </li>
+                                <li id="item9">
+                                    <select>
+                                        <option>Эффект 1</option>
+                                        <option>Эффект 2</option>
+                                        <option>Эффект 3</option>
+                                        <option>Эффект 4</option>
+                                    </select>
+                                </li>
+                                <li id="item10">
+                                    <select>
+                                        <option>Эффект 1</option>
+                                        <option>Эффект 2</option>
+                                        <option>Эффект 3</option>
+                                        <option>Эффект 4</option>
+                                    </select>
+                                </li>
+                                <li id="item11">
+                                    <select>
+                                        <option>Эффект 1</option>
+                                        <option>Эффект 2</option>
+                                        <option>Эффект 3</option>
+                                        <option>Эффект 4</option>
+                                    </select>
+                                </li>
+
+                                <li id="item12">
+                                    <input id="check1" type="checkbox" name="check" value="check1">
+                                    <label for="check1">Checkbox</label>
+                                </li>
+                                <li id="item13">
+                                    <input id="check2" type="checkbox" name="check" value="check2">
+                                    <label for="check2">Checkbox</label>
+                                </li>
+                                <li id="item14">
+                                    <input id="check3" type="checkbox" name="check" value="check3">
+                                    <label for="check3">Checkbox</label>
+                                </li>
+                                <li id="item15">
+                                    <input id="check4" type="checkbox" name="check" value="check4">
+                                    <label for="check4">Checkbox</label>
                                 </li>
                             </ol>
                         </form>
