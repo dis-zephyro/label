@@ -1246,6 +1246,8 @@ input[type="checkbox"]:focus {
 .b09 {
   height: 300px;
   background: url("../img/b09_bg.jpg") top center no-repeat; }
+  .b09 #map {
+    height: 300px; }
 
 .footer {
   background: #06162d; }
