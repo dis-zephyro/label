@@ -80,3 +80,7 @@
 .invisible {
     visibility: hidden;
 }
+
+.img-responsive {
+    @include img-responsive();
+}

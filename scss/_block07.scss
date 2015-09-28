@@ -1,6 +1,47 @@
 .b07 {
 	color: #fff;
 	height: 665px;
+	padding-top: 75px;
 	background: url("../img/b07_bg.jpg") top center no-repeat;
 
+	.b07__red-box {
+		color: #fff;
+		width: 1020px;
+		padding: 20px;
+		font-size: 30px;
+		text-align: center;
+		background: #fc3339;
+		margin: 0 auto 70px auto;
+
+		.lead {
+			font-size: 24px;
+			font-weight: 500;
+			padding-top: 15px;
+			text-transform: uppercase;
+		}
+	}
+
+	.b07__left-text {
+		left: 0;
+		top: 287px;
+		width: 400px;
+		font-size: 18px;
+		text-align: right;
+		position: absolute;
+
+		&:before {
+			top: 50%;
+			right: -30px;
+			width: 17px;
+			height: 29px;
+			content: " ";
+			margin-top: -8px;
+			position: absolute;
+			background: url("../img/sprite.png") -183px -163px no-repeat;
+		}
+
+		.form-title {
+			margin-bottom: 5px;
+		}
+	}
 }

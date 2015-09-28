@@ -146,6 +146,7 @@ html {
 }
 
 body {
+    min-width: 1220px;
     font-family: $font-family-base;
     font-size: $font-size-base;
     line-height: $line-height-base;
@@ -154,7 +155,48 @@ body {
     background-color: $body-bg;
 }
 
+section {
+    position: relative;
+}
 
+
+.side-icon {
+    top: 40px;
+    margin: 0;
+    padding: 0;
+    width: 95px;
+    list-style: none;
+    position: absolute;
+
+    li {
+        overflow: hidden;
+        margin-bottom: 20px;
+        @include opacity(0.17);
+
+        &:hover {
+            @include opacity(1);
+        }
+    }
+
+    &.side-icon-left {
+        left: 20px;
+    }
+
+    &.side-icon-right {
+        right: 20px;
+    }
+}
+
+.popup-box {
+    padding: 20px 0;
+    width: 330px;
+    background: #0c1b31;
+
+
+    .form-title {
+        color: #fff;
+    }
+}
 
 
 // Reset fonts for relevant elements
@@ -178,6 +220,8 @@ textarea {
 }
 
 h2 {
+    margin-top: 0;
+    padding-top: 0;
     color: #06162d;
     font-size: 48px;
     font-weight: 300;
