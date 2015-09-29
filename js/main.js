@@ -13,6 +13,22 @@ $(".popup").fancybox({
 });
 
 
+$('input[type="checkbox"]').click(function() {
+    var rows = $(this).closest('li');
+    var check = rows.find('label');
+    var checkbox = ($(this).is(':checked'));
+
+    if (checkbox) {
+        check.addClass('checked');
+    }
+    else{
+        check.removeClass('checked');
+    }
+});
+
+
+
+
 // Подключние Яндекс-Карты
 
 ymaps.ready(init);

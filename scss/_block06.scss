@@ -253,6 +253,10 @@
 						&:hover {
 							border-color: $input-border-focus;
 						}
+
+						&.checked:before {
+							background-position: 0 -420px;
+						}
 					}
 
 
