@@ -1,7 +1,8 @@
 // Base button
 // --------------------------------------------------
 
-.btn {
+.btn,
+.sendbutton {
     margin:0;
     border: none;
     cursor: pointer;
@@ -60,51 +61,6 @@
         &:after {
             border-left-color: $btn-default-bg-hover;
         }
-    }
-
-    &:active,
-    &.active {
-        top: 1px;
-        outline: 0;
-        background-image: none;
-    }
-}
-
-
-.sendbutton {
-    margin:0;
-    width: 100%;
-    border: none;
-    cursor: pointer;
-    text-align: center;
-    position: relative;
-    white-space: nowrap;
-    display: inline-block;
-    text-decoration: none;
-    vertical-align: middle;
-    background-image: none;
-    background: transparent;
-    height: $btn-default-height;
-    color: $btn-default-color;
-    touch-action: manipulation;
-    font-weight: $btn-font-weight;
-    @include button-size($btn-padding-vertical, $btn-padding-horizontal, $font-size-base, $line-height-base);
-
-    &,
-    &:active,
-    &.active {
-        &:focus,
-        &.focus {
-            @include tab-focus;
-        }
-    }
-
-    &:hover,
-    &:focus,
-    &.focus {
-        color: $btn-default-color;
-        background: transparent;
-        text-decoration: none;
     }
 
     &:active,

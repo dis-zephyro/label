@@ -433,7 +433,8 @@ input[type="radio"]:focus,
 input[type="checkbox"]:focus {
   outline: none; }
 
-.btn {
+.btn,
+.sendbutton {
   margin: 0;
   border: none;
   cursor: pointer;
@@ -452,7 +453,8 @@ input[type="checkbox"]:focus {
   padding: 15px 15px;
   font-size: 16px;
   line-height: 1.42857; }
-  .btn:before {
+  .btn:before,
+  .sendbutton:before {
     content: '';
     position: absolute;
     /* ╨Р╨▒╤Б╨╛╨╗╤О╤В╨╜╨╛╨╡ ╨┐╨╛╨╖╨╕╤Ж╨╕╨╛╨╜╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ */
@@ -460,7 +462,8 @@ input[type="checkbox"]:focus {
     top: 0;
     border: 26px solid transparent;
     border-right: 20px solid #fc3339; }
-  .btn:after {
+  .btn:after,
+  .sendbutton:after {
     content: '';
     position: absolute;
     /* ╨Р╨▒╤Б╨╛╨╗╤О╤В╨╜╨╛╨╡ ╨┐╨╛╨╖╨╕╤Ж╨╕╨╛╨╜╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ */
@@ -468,48 +471,34 @@ input[type="checkbox"]:focus {
     top: 0;
     border: 26px solid transparent;
     border-left: 20px solid #fc3339; }
-  .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
+  .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus,
+  .sendbutton:focus,
+  .sendbutton.focus,
+  .sendbutton:active:focus,
+  .sendbutton:active.focus,
+  .sendbutton.active:focus,
+  .sendbutton.active.focus {
     outline: none; }
-  .btn:hover, .btn:focus, .btn.focus {
+  .btn:hover, .btn:focus, .btn.focus,
+  .sendbutton:hover,
+  .sendbutton:focus,
+  .sendbutton.focus {
     color: #fff;
     background: #ce1319;
     text-decoration: none; }
-    .btn:hover:before, .btn:focus:before, .btn.focus:before {
+    .btn:hover:before, .btn:focus:before, .btn.focus:before,
+    .sendbutton:hover:before,
+    .sendbutton:focus:before,
+    .sendbutton.focus:before {
       border-right-color: #ce1319; }
-    .btn:hover:after, .btn:focus:after, .btn.focus:after {
+    .btn:hover:after, .btn:focus:after, .btn.focus:after,
+    .sendbutton:hover:after,
+    .sendbutton:focus:after,
+    .sendbutton.focus:after {
       border-left-color: #ce1319; }
-  .btn:active, .btn.active {
-    top: 1px;
-    outline: 0;
-    background-image: none; }
-
-.sendbutton {
-  margin: 0;
-  width: 100%;
-  border: none;
-  cursor: pointer;
-  text-align: center;
-  position: relative;
-  white-space: nowrap;
-  display: inline-block;
-  text-decoration: none;
-  vertical-align: middle;
-  background-image: none;
-  background: transparent;
-  height: 52px;
-  color: #fff;
-  touch-action: manipulation;
-  font-weight: 700;
-  padding: 15px 15px;
-  font-size: 16px;
-  line-height: 1.42857; }
-  .sendbutton:focus, .sendbutton.focus, .sendbutton:active:focus, .sendbutton:active.focus, .sendbutton.active:focus, .sendbutton.active.focus {
-    outline: none; }
-  .sendbutton:hover, .sendbutton:focus, .sendbutton.focus {
-    color: #fff;
-    background: transparent;
-    text-decoration: none; }
-  .sendbutton:active, .sendbutton.active {
+  .btn:active, .btn.active,
+  .sendbutton:active,
+  .sendbutton.active {
     top: 1px;
     outline: 0;
     background-image: none; }
@@ -1085,74 +1074,74 @@ input[type="checkbox"]:focus {
           .b06 .form-price .form-base li input[type="text"]:hover {
             outline: 0;
             border-color: #a9a9a9; }
-        .b06 .form-price .form-base li#item1 {
+        .b06 .form-price .form-base li#li-3-1 {
           margin: 0 20px; }
-          .b06 .form-price .form-base li#item1 input[type="text"] {
+          .b06 .form-price .form-base li#li-3-1 input[type="text"] {
             background-position: 0 0;
             padding: 16px 40px 16px 70px; }
-        .b06 .form-price .form-base li#item2 {
+        .b06 .form-price .form-base li#li-3-2 {
           margin: 0 20px; }
-          .b06 .form-price .form-base li#item2 input[type="text"] {
+          .b06 .form-price .form-base li#li-3-2 input[type="text"] {
             background-position: 0 -55px;
             padding: 16px 40px 16px 70px; }
-        .b06 .form-price .form-base li#item3 {
+        .b06 .form-price .form-base li#li-3-3 {
           margin: 0 20px; }
-          .b06 .form-price .form-base li#item3 input[type="text"] {
+          .b06 .form-price .form-base li#li-3-3 input[type="text"] {
             background-position: 0 -110px;
             padding: 16px 40px 16px 70px; }
-        .b06 .form-price .form-base li#item4, .b06 .form-price .form-base li#item5, .b06 .form-price .form-base li#item6, .b06 .form-price .form-base li#item7 {
+        .b06 .form-price .form-base li#li-3-4, .b06 .form-price .form-base li#li-3-5, .b06 .form-price .form-base li#li-3-6, .b06 .form-price .form-base li#li-3-7 {
           left: 70px;
           display: block;
           position: absolute;
           text-align: center;
           margin-bottom: 20px; }
-          .b06 .form-price .form-base li#item4 select,
-          .b06 .form-price .form-base li#item4 input[type="text"], .b06 .form-price .form-base li#item5 select,
-          .b06 .form-price .form-base li#item5 input[type="text"], .b06 .form-price .form-base li#item6 select,
-          .b06 .form-price .form-base li#item6 input[type="text"], .b06 .form-price .form-base li#item7 select,
-          .b06 .form-price .form-base li#item7 input[type="text"] {
+          .b06 .form-price .form-base li#li-3-4 select,
+          .b06 .form-price .form-base li#li-3-4 input[type="text"], .b06 .form-price .form-base li#li-3-5 select,
+          .b06 .form-price .form-base li#li-3-5 input[type="text"], .b06 .form-price .form-base li#li-3-6 select,
+          .b06 .form-price .form-base li#li-3-6 input[type="text"], .b06 .form-price .form-base li#li-3-7 select,
+          .b06 .form-price .form-base li#li-3-7 input[type="text"] {
             height: 50px; }
-        .b06 .form-price .form-base li#item4 {
+        .b06 .form-price .form-base li#li-3-4 {
           top: -390px; }
-          .b06 .form-price .form-base li#item4 select {
+          .b06 .form-price .form-base li#li-3-4 select {
             background-position: -5px -330px; }
-        .b06 .form-price .form-base li#item5 {
+        .b06 .form-price .form-base li#li-3-5 {
           top: -320px; }
-          .b06 .form-price .form-base li#item5 select {
+          .b06 .form-price .form-base li#li-3-5 select {
             background-position: -5px -330px; }
-        .b06 .form-price .form-base li#item6 {
+        .b06 .form-price .form-base li#li-3-6 {
           top: -250px; }
-        .b06 .form-price .form-base li#item7 {
+        .b06 .form-price .form-base li#li-3-7 {
           top: -180px; }
-        .b06 .form-price .form-base li#item8, .b06 .form-price .form-base li#item9, .b06 .form-price .form-base li#item10, .b06 .form-price .form-base li#item11 {
+        .b06 .form-price .form-base li#li-3-8, .b06 .form-price .form-base li#li-3-9, .b06 .form-price .form-base li#li-3-10, .b06 .form-price .form-base li#li-3-11 {
           left: 430px;
           display: block;
           position: absolute;
           text-align: center;
           margin-bottom: 10px; }
-          .b06 .form-price .form-base li#item8 select, .b06 .form-price .form-base li#item9 select, .b06 .form-price .form-base li#item10 select, .b06 .form-price .form-base li#item11 select {
+          .b06 .form-price .form-base li#li-3-8 select, .b06 .form-price .form-base li#li-3-9 select, .b06 .form-price .form-base li#li-3-10 select, .b06 .form-price .form-base li#li-3-11 select {
             height: 40px;
             font-size: 14px;
             padding-top: 9px;
             padding-bottom: 9px;
             background-position: 0 -380px; }
-        .b06 .form-price .form-base li#item8 {
+        .b06 .form-price .form-base li#li-3-8 {
           top: -350px; }
-        .b06 .form-price .form-base li#item9 {
+        .b06 .form-price .form-base li#li-3-9 {
           top: -290px; }
-        .b06 .form-price .form-base li#item10 {
+        .b06 .form-price .form-base li#li-3-10 {
           top: -230px; }
-        .b06 .form-price .form-base li#item11 {
+        .b06 .form-price .form-base li#li-3-11 {
           top: -170px; }
-        .b06 .form-price .form-base li#item12, .b06 .form-price .form-base li#item13, .b06 .form-price .form-base li#item14, .b06 .form-price .form-base li#item15 {
+        .b06 .form-price .form-base li#li-3-12, .b06 .form-price .form-base li#li-3-13, .b06 .form-price .form-base li#li-3-14, .b06 .form-price .form-base li#li-3-15 {
           right: 90px;
           display: block;
           position: absolute;
           text-align: center;
           margin-bottom: 10px; }
-          .b06 .form-price .form-base li#item12 input[type=checkbox], .b06 .form-price .form-base li#item13 input[type=checkbox], .b06 .form-price .form-base li#item14 input[type=checkbox], .b06 .form-price .form-base li#item15 input[type=checkbox] {
+          .b06 .form-price .form-base li#li-3-12 input[type=checkbox], .b06 .form-price .form-base li#li-3-13 input[type=checkbox], .b06 .form-price .form-base li#li-3-14 input[type=checkbox], .b06 .form-price .form-base li#li-3-15 input[type=checkbox] {
             display: none; }
-          .b06 .form-price .form-base li#item12 label, .b06 .form-price .form-base li#item13 label, .b06 .form-price .form-base li#item14 label, .b06 .form-price .form-base li#item15 label {
+          .b06 .form-price .form-base li#li-3-12 label, .b06 .form-price .form-base li#li-3-13 label, .b06 .form-price .form-base li#li-3-14 label, .b06 .form-price .form-base li#li-3-15 label {
             width: 100%;
             display: block;
             color: #aaaaaa;
@@ -1165,7 +1154,7 @@ input[type="checkbox"]:focus {
             background-color: #fff;
             padding: 9px 55px 9px 20px;
             border: 1px solid #dddddd; }
-            .b06 .form-price .form-base li#item12 label:before, .b06 .form-price .form-base li#item13 label:before, .b06 .form-price .form-base li#item14 label:before, .b06 .form-price .form-base li#item15 label:before {
+            .b06 .form-price .form-base li#li-3-12 label:before, .b06 .form-price .form-base li#li-3-13 label:before, .b06 .form-price .form-base li#li-3-14 label:before, .b06 .form-price .form-base li#li-3-15 label:before {
               right: 6px;
               top: 5px;
               content: "";
@@ -1174,33 +1163,40 @@ input[type="checkbox"]:focus {
               position: absolute;
               display: inline-block;
               background: url("../img/form_sprite.png") -22px -420px no-repeat; }
-            .b06 .form-price .form-base li#item12 label:hover, .b06 .form-price .form-base li#item13 label:hover, .b06 .form-price .form-base li#item14 label:hover, .b06 .form-price .form-base li#item15 label:hover {
+            .b06 .form-price .form-base li#li-3-12 label:hover, .b06 .form-price .form-base li#li-3-13 label:hover, .b06 .form-price .form-base li#li-3-14 label:hover, .b06 .form-price .form-base li#li-3-15 label:hover {
               border-color: #a9a9a9; }
-          .b06 .form-price .form-base li#item12 input[type=checkbox]:checked + label:before, .b06 .form-price .form-base li#item13 input[type=checkbox]:checked + label:before, .b06 .form-price .form-base li#item14 input[type=checkbox]:checked + label:before, .b06 .form-price .form-base li#item15 input[type=checkbox]:checked + label:before {
+          .b06 .form-price .form-base li#li-3-12 input[type=checkbox]:checked + label:before, .b06 .form-price .form-base li#li-3-13 input[type=checkbox]:checked + label:before, .b06 .form-price .form-base li#li-3-14 input[type=checkbox]:checked + label:before, .b06 .form-price .form-base li#li-3-15 input[type=checkbox]:checked + label:before {
             background-position: 0 -420px; }
-          .b06 .form-price .form-base li#item12#item12, .b06 .form-price .form-base li#item13#item12, .b06 .form-price .form-base li#item14#item12, .b06 .form-price .form-base li#item15#item12 {
+          .b06 .form-price .form-base li#li-3-12#li-3-12, .b06 .form-price .form-base li#li-3-13#li-3-12, .b06 .form-price .form-base li#li-3-14#li-3-12, .b06 .form-price .form-base li#li-3-15#li-3-12 {
             top: -350px; }
-          .b06 .form-price .form-base li#item12#item13, .b06 .form-price .form-base li#item13#item13, .b06 .form-price .form-base li#item14#item13, .b06 .form-price .form-base li#item15#item13 {
+          .b06 .form-price .form-base li#li-3-12#li-3-13, .b06 .form-price .form-base li#li-3-13#li-3-13, .b06 .form-price .form-base li#li-3-14#li-3-13, .b06 .form-price .form-base li#li-3-15#li-3-13 {
             top: -290px; }
-          .b06 .form-price .form-base li#item12#item14, .b06 .form-price .form-base li#item13#item14, .b06 .form-price .form-base li#item14#item14, .b06 .form-price .form-base li#item15#item14 {
+          .b06 .form-price .form-base li#li-3-12#li-3-14, .b06 .form-price .form-base li#li-3-13#li-3-14, .b06 .form-price .form-base li#li-3-14#li-3-14, .b06 .form-price .form-base li#li-3-15#li-3-14 {
             top: -230px; }
-          .b06 .form-price .form-base li#item12#item15, .b06 .form-price .form-base li#item13#item15, .b06 .form-price .form-base li#item14#item15, .b06 .form-price .form-base li#item15#item15 {
+          .b06 .form-price .form-base li#li-3-12#li-3-15, .b06 .form-price .form-base li#li-3-13#li-3-15, .b06 .form-price .form-base li#li-3-14#li-3-15, .b06 .form-price .form-base li#li-3-15#li-3-15 {
             top: -170px; }
-    .b06 .form-price .form-price__footer {
-      width: 820px; }
-      .b06 .form-price .form-price__footer .text {
-        font-size: 16px;
-        padding: 11px 0;
-        line-height: 30px; }
-        .b06 .form-price .form-price__footer .text span {
-          width: 120px;
-          height: 30px;
-          margin: 0 10px;
-          color: #fc3339;
-          text-align: center;
-          display: inline-block;
-          text-transform: uppercase;
-          background: url("../img/b06_text.png") 0 0 no-repeat; }
+    .b06 .form-price .cf-sb {
+      width: 820px;
+      margin: 0 auto;
+      padding-top: 30px;
+      text-align: left; }
+    .b06 .form-price .form-price-text {
+      right: 180px;
+      bottom: 40px;
+      position: absolute;
+      text-align: right;
+      font-size: 16px;
+      padding: 11px 0;
+      line-height: 30px; }
+      .b06 .form-price .form-price-text span {
+        width: 120px;
+        height: 30px;
+        margin: 0 10px;
+        color: #fc3339;
+        text-align: center;
+        display: inline-block;
+        text-transform: uppercase;
+        background: url("../img/b06_text.png") 0 0 no-repeat; }
 
 .b07 {
   color: #fff;
