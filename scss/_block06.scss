@@ -279,7 +279,50 @@
 			}
 		}
 
+
 		.cf-sb {
+			margin-top: 40px;
+			margin-left: 130px;
+			width: 270px;
+			position: relative;
+			background: $btn-default-bg;
+
+			&:before {
+				content: '';
+				position: absolute;
+				left: -46px;
+				top: 0;
+				border: 26px solid transparent;
+				border-right: 20px solid #fc3339;
+			}
+
+			&:after {
+				content: '';
+				position: absolute;
+				right: -46px;
+				top: 0;
+				border: 26px solid transparent;
+				border-left: 20px solid #fc3339;
+			}
+
+
+			&:hover,
+			&:focus,
+			&.focus {
+				background: $btn-default-bg-hover;
+
+				&:before {
+					border-right-color: $btn-default-bg-hover;
+				}
+
+				&:after {
+					border-left-color: $btn-default-bg-hover;
+				}
+			}
+
+		}
+
+		.dd {
 			width: 820px;
 			margin: 0 auto;
 			padding-top: 30px;
@@ -287,8 +330,8 @@
 		}
 
 		.form-price-text {
-			right: 180px;
-			bottom: 40px;
+			right: 170px;
+			bottom: 55px;
 			position: absolute;
 			text-align: right;
 			font-size: 16px;

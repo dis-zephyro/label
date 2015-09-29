@@ -433,8 +433,7 @@ input[type="radio"]:focus,
 input[type="checkbox"]:focus {
   outline: none; }
 
-.btn,
-.sendbutton {
+.btn {
   margin: 0;
   border: none;
   cursor: pointer;
@@ -453,7 +452,57 @@ input[type="checkbox"]:focus {
   padding: 15px 15px;
   font-size: 16px;
   line-height: 1.42857; }
-  .btn:before,
+  .btn:before {
+    content: '';
+    position: absolute;
+    /* ╨Р╨▒╤Б╨╛╨╗╤О╤В╨╜╨╛╨╡ ╨┐╨╛╨╖╨╕╤Ж╨╕╨╛╨╜╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ */
+    left: -46px;
+    top: 0;
+    border: 26px solid transparent;
+    border-right: 20px solid #fc3339; }
+  .btn:after {
+    content: '';
+    position: absolute;
+    /* ╨Р╨▒╤Б╨╛╨╗╤О╤В╨╜╨╛╨╡ ╨┐╨╛╨╖╨╕╤Ж╨╕╨╛╨╜╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ */
+    right: -46px;
+    top: 0;
+    border: 26px solid transparent;
+    border-left: 20px solid #fc3339; }
+  .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
+    outline: none; }
+  .btn:hover, .btn:focus, .btn.focus {
+    color: #fff;
+    background: #ce1319;
+    text-decoration: none; }
+    .btn:hover:before, .btn:focus:before, .btn.focus:before {
+      border-right-color: #ce1319; }
+    .btn:hover:after, .btn:focus:after, .btn.focus:after {
+      border-left-color: #ce1319; }
+  .btn:active, .btn.active {
+    top: 1px;
+    outline: 0;
+    background-image: none; }
+
+.sendbutton {
+  margin: 0;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  white-space: nowrap;
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: middle;
+  background-image: none;
+  background: transparent;
+  height: 52px;
+  color: #fff;
+  touch-action: manipulation;
+  font-weight: 700;
+  padding: 15px 15px;
+  font-size: 16px;
+  line-height: 1.42857; }
   .sendbutton:before {
     content: '';
     position: absolute;
@@ -462,7 +511,6 @@ input[type="checkbox"]:focus {
     top: 0;
     border: 26px solid transparent;
     border-right: 20px solid #fc3339; }
-  .btn:after,
   .sendbutton:after {
     content: '';
     position: absolute;
@@ -471,34 +519,17 @@ input[type="checkbox"]:focus {
     top: 0;
     border: 26px solid transparent;
     border-left: 20px solid #fc3339; }
-  .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus,
-  .sendbutton:focus,
-  .sendbutton.focus,
-  .sendbutton:active:focus,
-  .sendbutton:active.focus,
-  .sendbutton.active:focus,
-  .sendbutton.active.focus {
+  .sendbutton:focus, .sendbutton.focus, .sendbutton:active:focus, .sendbutton:active.focus, .sendbutton.active:focus, .sendbutton.active.focus {
     outline: none; }
-  .btn:hover, .btn:focus, .btn.focus,
-  .sendbutton:hover,
-  .sendbutton:focus,
-  .sendbutton.focus {
+  .sendbutton:hover, .sendbutton:focus, .sendbutton.focus {
     color: #fff;
     background: #ce1319;
     text-decoration: none; }
-    .btn:hover:before, .btn:focus:before, .btn.focus:before,
-    .sendbutton:hover:before,
-    .sendbutton:focus:before,
-    .sendbutton.focus:before {
+    .sendbutton:hover:before, .sendbutton:focus:before, .sendbutton.focus:before {
       border-right-color: #ce1319; }
-    .btn:hover:after, .btn:focus:after, .btn.focus:after,
-    .sendbutton:hover:after,
-    .sendbutton:focus:after,
-    .sendbutton.focus:after {
+    .sendbutton:hover:after, .sendbutton:focus:after, .sendbutton.focus:after {
       border-left-color: #ce1319; }
-  .btn:active, .btn.active,
-  .sendbutton:active,
-  .sendbutton.active {
+  .sendbutton:active, .sendbutton.active {
     top: 1px;
     outline: 0;
     background-image: none; }
@@ -1176,13 +1207,39 @@ input[type="checkbox"]:focus {
           .b06 .form-price .form-base li#li-3-12#li-3-15, .b06 .form-price .form-base li#li-3-13#li-3-15, .b06 .form-price .form-base li#li-3-14#li-3-15, .b06 .form-price .form-base li#li-3-15#li-3-15 {
             top: -170px; }
     .b06 .form-price .cf-sb {
+      margin-top: 40px;
+      margin-left: 130px;
+      width: 270px;
+      position: relative;
+      background: #fc3339; }
+      .b06 .form-price .cf-sb:before {
+        content: '';
+        position: absolute;
+        left: -46px;
+        top: 0;
+        border: 26px solid transparent;
+        border-right: 20px solid #fc3339; }
+      .b06 .form-price .cf-sb:after {
+        content: '';
+        position: absolute;
+        right: -46px;
+        top: 0;
+        border: 26px solid transparent;
+        border-left: 20px solid #fc3339; }
+      .b06 .form-price .cf-sb:hover, .b06 .form-price .cf-sb:focus, .b06 .form-price .cf-sb.focus {
+        background: #ce1319; }
+        .b06 .form-price .cf-sb:hover:before, .b06 .form-price .cf-sb:focus:before, .b06 .form-price .cf-sb.focus:before {
+          border-right-color: #ce1319; }
+        .b06 .form-price .cf-sb:hover:after, .b06 .form-price .cf-sb:focus:after, .b06 .form-price .cf-sb.focus:after {
+          border-left-color: #ce1319; }
+    .b06 .form-price .dd {
       width: 820px;
       margin: 0 auto;
       padding-top: 30px;
       text-align: left; }
     .b06 .form-price .form-price-text {
-      right: 180px;
-      bottom: 40px;
+      right: 170px;
+      bottom: 55px;
       position: absolute;
       text-align: right;
       font-size: 16px;
